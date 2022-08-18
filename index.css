@@ -1,64 +1,67 @@
 .container {
-  margin: 20%;
+    margin: 18%;
 }
 
 #value {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 3% auto;
-  flex-wrap: wrap;
-  height: 30px;
-  width: 40px;
-  border: 1px solid black;
-  border-radius: 5px;
-  outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3% auto;
+    flex-wrap: wrap;
+    height: 30px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    caret-color: chartreuse;
 }
 
 #btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 3% auto;
-  border: 1px solid black;
-  border-radius: 5px;
-  height: 30px;
-  width: 60px;
-  background: lightgray;
-  cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3% auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 30px;
+    width: 60px;
+    background: lightgray;
+    cursor: pointer;
 }
 
 #myProgress {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 3px;
-  height: 40px;
-  width: 260px;
-}
-
-progress::-webkit-progress-value {
-  -webkit-appearance: none;
-  background: gray;
-  border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 3px;
+    height: 40px;
+    width: 270px;
 }
 
 progress::-webkit-progress-bar {
-  background: #ffffff;
-  border-radius: 2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #ffffff;
+    border-radius: 2px;
+    transition: width 0.5s;
 }
-/* .progress-yellow::-webkit-progress-bar{
-     background: yellow;
-   }
-   .progress-red::-webkit-progress-bar{
-     background: red;
-   }
-   .progress-blue::-webkit-progress-bar{
-     background: blue;
-   }
-   .progress-green::-webkit-progress-bar{
-     background: green;
-   } */
+.progress-yellow::-webkit-progress-value {
+    background: yellow;
+    border-radius: 3px;
+    transition: width 0.5s;
+}
+.progress-red::-webkit-progress-value {
+    background: red;
+    border-radius: 3px;
+    transition: width 0.5s;
+}
+.progress-green::-webkit-progress-value {
+    background: green;
+    border-radius: 3px;
+    transition: width 0.5s;
+}
