@@ -1,15 +1,15 @@
-function func() {
-    const x = document.getElementById("myProgress");
-    x.value = document.getElementById("value").value;
+function barFn() {
+    const inputRef = document.getElementById("myProgress");
+    inputRef.value = document.getElementById("value").value;
 
-    if (x.value < 20) {
-        x.classList.remove("progress-green");
-        x.classList.add("progress-red");
-    } else if (x.value >= 20 && x.value <= 65) {
-        x.classList.remove("progress-green", "progress-red");
-        x.classList.add("progress-yellow");
+    if (inputRef.value < 20) {
+        inputRef.classList.remove("progress-green");
+        inputRef.classList.add("progress-red");
+    } else if (inputRef.value >= 20 && inputRef.value <= 65) {
+        inputRef.classList.remove("progress-green", "progress-red");
+        inputRef.classList.add("progress-yellow");
     } else {
-        x.classList.remove("progress-yellow", "progress-red");
-        x.classList.add("progress-green");
+        inputRef.classList.remove("progress-yellow", "progress-red");
+        inputRef.classList.add("progress-green");
     }
 }
