@@ -49,18 +49,26 @@ progress::-webkit-progress-bar {
   background: #ffffff;
   border-radius: 2px;
 }
+
 .progress-yellow::-webkit-progress-value {
   background: yellow;
   border-radius: 3px;
   transition: width 0.5s;
 }
+
 .progress-red::-webkit-progress-value {
   background: red;
   border-radius: 3px;
   transition: width 0.5s;
 }
+
 .progress-green::-webkit-progress-value {
-  /* background: green; */
+  background: green;
+  border-radius: 3px;
+  transition: width 0.5s;
+}
+
+.progress-mix::-webkit-progress-value {
   border-radius: 3px;
   transition: width 0.5s;
   background-image: -webkit-linear-gradient(
@@ -71,7 +79,6 @@ progress::-webkit-progress-bar {
       transparent 66%
     ),
     -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
-    -webkit-linear-gradient(left, #09c, #f44, green, pink);
-
+    -webkit-linear-gradient(left, #09c, #f44, green, pink, yellow, lightgray, lightgreen, indigo, cyan, white, aqua);
   background-size: 35px 20px, 100% 100%, 100% 100%;
 }
