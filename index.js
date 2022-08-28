@@ -3,13 +3,22 @@ function barFn() {
   inputRef.value = document.getElementById("value").value;
 
   if (inputRef.value < 20) {
-    inputRef.classList.remove("progress-mix");
+    inputRef.classList.remove(
+      "progress-mix",
+      "progress-green",
+      "progress-yellow"
+    );
     inputRef.classList.add("progress-red");
   } else if (inputRef.value >= 20 && inputRef.value <= 65) {
-    inputRef.classList.remove("progress-red", "progress-mix");
+    inputRef.classList.remove("progress-red", "progress-mix", "progress-green");
     inputRef.classList.add("progress-yellow");
   } else if (inputRef.value > 65 && inputRef.value <= 100) {
-    inputRef.classList.remove("progress-mix");
+    inputRef.classList.remove(
+      "progress-mix",
+      "progress-green",
+      "progress-yellow",
+      "progress-red"
+    );
     inputRef.classList.add("progress-green");
   } else {
     alert("number is greater than 100");
